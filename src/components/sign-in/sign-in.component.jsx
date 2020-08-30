@@ -28,10 +28,12 @@ class SignIn extends React.Component {
       console.error(error);
     }
   };
+
   handleChange = (event) => {
     const { value, name } = event.target;
     this.setState({ [name]: value });
   };
+
   render() {
     return (
       <div className="sign-in">
